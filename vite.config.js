@@ -8,4 +8,12 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  },
+  // Set base to repository name for GitHub Pages
+  // Change 'bioflow' to your actual repository name
+  base: process.env.GITHUB_ACTIONS ? '/bioflow/' : '/',
 })
