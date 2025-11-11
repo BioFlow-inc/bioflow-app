@@ -39,7 +39,7 @@ const Navigation = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/bioflow-app">
       <Navigation />
       <Routes>
         <Route path="/" element={<BioFlowWebsite />} />
